@@ -68,6 +68,9 @@
     .appliance-list { padding-left: 0; list-style: none; margin: 0 0 10px 0; font-size: 13px; color: #475569; }
     .appliance-list li { padding: 5px 0; border-bottom: 1px dashed #f1f5f9; }
 
+    /* 照明照片分組標題樣式 */
+    .photo-group-title { font-size: 13px; font-weight: bold; color: var(--accent); background: #eff6ff; border-left: 3px solid var(--accent); padding: 6px 10px; margin: 16px 0 6px 0; border-radius: 4px; }
+
     /* 所有照片放大並統一等比例顯示 */
     .guide-img {
       max-width: 300px;
@@ -268,7 +271,7 @@
         <span class="lang-ja">7. 家電製品<br><span style="font-size:10px;font-weight:normal;">Appliances</span></span>
         <span class="lang-en">7. Appliances<br><span style="font-size:10px;font-weight:normal;">Appliances</span></span>
         <span class="lang-zh">7. 家電設備<br><span style="font-size:10px;font-weight:normal;">Appliances</span></span>
-        <span class="lang-ko">7. 가전製品<br><span style="font-size:10px;font-weight:normal;">Appliances</span></span>
+        <span class="lang-ko">7. 가전제품<br><span style="font-size:10px;font-weight:normal;">Appliances</span></span>
       </div>
       <div class="menu-btn" onclick="openTab('tab8', this)">
         <span class="lang-ja">8. 周辺情報<br><span style="font-size:10px;font-weight:normal;">Facilities</span></span>
@@ -335,7 +338,7 @@
       <div class="section-title lang-ja">2. ルール</div>
       <div class="section-title lang-en">2. House Rules & Toilet Guidelines</div>
       <div class="section-title lang-zh">2. 住宿規定與廁所須知</div>
-      <div class="section-title lang-ko">2. 이용規則 및 화장실 안내</div>
+      <div class="section-title lang-ko">2. 이용규칙 및 화장실 안내</div>
       
       <!-- 🏠 House Rules -->
       <div class="info-card">
@@ -353,13 +356,13 @@
         <p class="lang-ja rule-desc">外出時は、ファンヒーター、ルームライトなどその他家電製品の電源はお切りください。</p>
         <p class="lang-en rule-desc">Please turn off the heater, room lights, and other electronic devices when leaving.</p>
         <p class="lang-zh rule-desc">外出時請務必關閉電暖器、電燈等所有電器電源。</p>
-        <p class="lang-ko rule-desc">외출 시 히터, 조명 등 가전製品의 전원을 꺼주세요.</p>
+        <p class="lang-ko rule-desc">외출 시 히터, 조명 등 가전제품의 전원을 꺼주세요.</p>
 
         <span class="rule-title">⚠️ 破損・賠償 / Damage Compensation</span>
         <p class="lang-ja rule-desc">建物や設備、備品を破損した場合、修繕費と営業補償費をご負担頂きます。</p>
         <p class="lang-en rule-desc">In the event of damage to the property or facilities, you will be responsible for repair and compensation costs.</p>
         <p class="lang-zh rule-desc">若損壞建築、設備或物品，須承擔修繕費與營業損失賠償。</p>
-        <p class="lang-ko rule-desc">건물이나 설비, 비품을 손상시킨 경우 수리비 및 영업 보상비를負担하셔야 합니다.</p>
+        <p class="lang-ko rule-desc">건물이나 설비, 비품을 손상시킨 경우 수리비 및 영업 보상비를 부담하셔야 합니다.</p>
 
         <span class="rule-title">🤫 お静かに / Keep Quiet</span>
         <p class="lang-ja rule-desc">近隣への配慮のため音漏れにご注意ください。特に21～7時の間は会話や音量を控えめにしてください。</p>
@@ -377,7 +380,7 @@
         <p class="lang-ja rule-desc">火気を使用する際は、十分に注意し正しくご利用ください。万が一、火災などの緊急事態が発生した場合は、すぐにご連絡いただき、指示に従ってください。</p>
         <p class="lang-en rule-desc">Please be extremely careful when using fire or heating sources. In the unlikely event of an emergency such as a fire, please contact us immediately and follow instructions.</p>
         <p class="lang-zh rule-desc">使用火源時請格外小心並正確使用。萬一發生火災等緊急狀況，請立即與我們聯絡並遵循指示。</p>
-        <p class="lang-ko rule-desc">화기를 사용할 때는 충분히 주의하여 올바르게 이용해 주십시오. 만일 화재 등 긴급 상황이発生한 경우 즉시 연락해 주시고 지시에 따라 주시기 바랍니다.</p>
+        <p class="lang-ko rule-desc">화기를 사용할 때는 충분히 주의하여 올바르게 이용해 주십시오. 만일 화재 등 긴급 상황이 발생한 경우 즉시 연락해 주시고 지시에 따라 주시기 바랍니다.</p>
 
         <span class="rule-title">📦 お忘れ物 / Forgotten Belongings</span>
         <p class="lang-ja rule-desc">お忘れ物を後日送付する際は、送料はご負担いただきます。</p>
@@ -402,13 +405,13 @@
         <p class="lang-ja rule-desc">トイレットペーパーはゴミ箱に捨てず、直接便器に入れて流してください。その他の異物は流さないでください。</p>
         <p class="lang-en rule-desc">Do not throw the toilet paper away in the trash bin. Please place the toilet paper in the toilet and flush. Please do not flush anything other than toilet paper.</p>
         <p class="lang-zh rule-desc">衛生紙請直接投入馬桶沖掉，切勿扔進垃圾桶。請勿將衛生紙以外的異物丟入馬桶。</p>
-        <p class="lang-ko rule-desc">화장지는 휴지통에 버리지 마시고 변기에 넣고 물을 내려주세요. 화장지 이외의 이物質은 넣지 마십시오.</p>
+        <p class="lang-ko rule-desc">화장지는 휴지통에 버리지 마시고 변기에 넣고 물을 내려주세요. 화장지 이외의 이물질은 넣지 마십시오.</p>
 
         <span class="rule-title">💧 水の流し方 / Flushing</span>
         <p class="lang-ja rule-desc">レバーを押すと水が流れます。</p>
         <p class="lang-en rule-desc">Push the lever down to flush the toilet.</p>
         <p class="lang-zh rule-desc">按下沖水槓桿即可沖水。</p>
-        <p class="lang-ko rule-desc">レバー를 누르면 물이 내려갑니다.</p>
+        <p class="lang-ko rule-desc">레버를 누르면 물이 내려갑니다.</p>
       </div>
     </div>
 
@@ -417,7 +420,7 @@
       <div class="section-title lang-ja">3. ゴミの捨て方</div>
       <div class="section-title lang-en">3. How to Put Out Garbage</div>
       <div class="section-title lang-zh">3. 垃圾分類說明</div>
-      <div class="section-title lang-ko">3. 쓰레기 배出 方法</div>
+      <div class="section-title lang-ko">3. 쓰레기 배출 방법</div>
       
       <div class="info-card">
         <p class="lang-ja" style="font-weight: bold; margin-bottom: 8px;">ゴミは以下の分別にご協力ください：</p>
@@ -427,7 +430,7 @@
         
         <ul style="padding-left: 20px; margin: 0 0 12px 0; font-size: 13px; color: #475569;">
           <li><strong>燃えるゴミ</strong> / Burnable / 可燃垃圾 / 타는 쓰레기</li>
-          <li><strong>燃えないゴミ</strong> / Non-burnable / 不可燃垃圾 / 안 タ는 쓰레기</li>
+          <li><strong>燃えないゴミ</strong> / Non-burnable / 不可燃垃圾 / 안 타는 쓰레기</li>
           <li><strong>ビン・缶</strong> / Bottles & Cans / 瓶罐類 / 병·캔</li>
         </ul>
         
@@ -456,7 +459,7 @@
         <p class="lang-ja">予約サイトのメッセージのほか、緊急時は下記までお電話ください。</p>
         <p class="lang-en">For urgent matters, please call the number below in addition to booking site messages.</p>
         <p class="lang-zh">除了預訂網站訊息外，如有緊急狀況請撥打以下電話：</p>
-        <p class="lang-ko">예약 사이트 메시지 외에도 긴급 시 아래로連絡해 주세요.</p>
+        <p class="lang-ko">예약 사이트 메시지 외에도 긴급 시 아래로 연락해 주세요.</p>
         
         <p style="margin-bottom: 4px;"><strong>TEL：</strong>080-4862-7949（10:00 - 19:00）</p>
         <a href="tel:08048627949" class="tel-btn">📞 Call: 080-4862-7949</a>
@@ -493,7 +496,7 @@
         
         <p class="lang-zh" style="margin-top:0; line-height: 1.6;"><strong>室內及建築敷地內全面禁止吸菸。</strong><br>包含加熱菸與電子菸在內，嚴禁在室內吸菸。<br><br>若發現室內有吸菸行為，將收取特殊清潔費及營業損失補償違約金。</p>
         
-        <p class="lang-ko" style="margin-top:0; line-height: 1.6;"><strong>실내 및 부지 내는 전구역 금연입니다.</strong><br>전자담배 및 권련型 담배를 포함하여 실내 흡연은 엄格히 금지되어 있습니다.<br><br>만일 실내 흡연이 적発될 경우 청소비 및 영업 보상비로 위薬금이 청구됩니다.</p>
+        <p class="lang-ko" style="margin-top:0; line-height: 1.6;"><strong>실내 및 부지 내는 전구역 금연입니다.</strong><br>전자담배 및 궐련형 담배를 포함하여 실내 흡연은 엄격히 금지되어 있습니다.<br><br>만일 실내 흡연이 적발될 경우 청소비 및 영업 보상비로 위약금이 청구됩니다.</p>
       </div>
     </div>
 
@@ -521,14 +524,14 @@
       <div class="section-title lang-ja">7. 家電製品</div>
       <div class="section-title lang-en">7. Electrical Appliances</div>
       <div class="section-title lang-zh">7. 家電設備說明</div>
-      <div class="section-title lang-ko">7. 가전製品 사용法</div>
+      <div class="section-title lang-ko">7. 가전제품 사용법</div>
       
       <p class="lang-ja" style="font-size: 13px; color: #64748b; margin-bottom: 12px;">ご覧になりたい家電を選択してください：</p>
       <p class="lang-en" style="font-size: 13px; color: #64748b; margin-bottom: 12px;">Please select the appliance you want to view:</p>
       <p class="lang-zh" style="font-size: 13px; color: #64748b; margin-bottom: 12px;">請選擇欲查看的家電設備：</p>
       <p class="lang-ko" style="font-size: 13px; color: #64748b; margin-bottom: 12px;">확인할 가전제품을 선택해 주세요:</p>
 
-      <!-- 家電子選單按鈕 -->
+      <!-- 家電子選單按鈕（新增給湯器） -->
       <div class="sub-menu-grid">
         <div class="sub-menu-btn active" onclick="openAppliance('app-heater', this)">
           <span class="lang-ja">🔥 石油ファンヒーター</span>
@@ -560,6 +563,12 @@
           <span class="lang-zh">♨️ 浴室乾燥機</span>
           <span class="lang-ko">♨️ 욕실 건조기</span>
         </div>
+        <div class="sub-menu-btn" onclick="openAppliance('app-water', this)">
+          <span class="lang-ja">♨️ 給湯器</span>
+          <span class="lang-en">♨️ Water Heater</span>
+          <span class="lang-zh">♨️ 給湯器 (熱水器)</span>
+          <span class="lang-ko">♨️ 온수기(급탕기)</span>
+        </div>
         <div class="sub-menu-btn" onclick="openAppliance('app-light', this)">
           <span class="lang-ja">💡 照明</span>
           <span class="lang-en">💡 Light Switch</span>
@@ -574,7 +583,7 @@
         </div>
       </div>
 
-      <!-- 1. 石油ファンヒーター (改為3張照片) -->
+      <!-- 1. 石油ファンヒーター (3張照片) -->
       <div id="app-heater" class="info-card appliance-detail active">
         <div class="appliance-header">
           <div class="appliance-title-main">🔥 石油ファンヒーター</div>
@@ -595,7 +604,7 @@
         <img src="heater3.jpg" alt="Kerosene Heater 3" class="guide-img">
       </div>
 
-      <!-- 2. IH爐 -->
+      <!-- 2. IH爐 (已增加 火力、温度 說明) -->
       <div id="app-ih" class="info-card appliance-detail">
         <div class="appliance-header">
           <div class="appliance-title-main">🍳 IHクッキングヒーター</div>
@@ -604,6 +613,8 @@
         <ul class="appliance-list">
           <li><strong>加熱:</strong> Heat / 加熱 / 가열</li>
           <li><strong>切/入:</strong> On/Off / 開關 / 전원</li>
+          <li><strong>火力:</strong> Heat / Power Level / 火力調整 / 화력</li>
+          <li><strong>温度:</strong> Temperature / 溫度調整 / 온도</li>
           <li><strong>弱く:</strong> Decrease Heat / 減弱火力 / 약하게</li>
           <li><strong>強く:</strong> Increase Heat / 加強火力 / 강하게</li>
           <li><strong>タイマー:</strong> Timer / 定時器 / 타이머</li>
@@ -627,7 +638,7 @@
         <img src="Microwave.jpg" alt="Microwave Oven" class="guide-img">
       </div>
 
-      <!-- 4. 洗濯機 -->
+      <!-- 4. 洗濯機 (已增加 一時停止、水量、予約) -->
       <div id="app-wash" class="info-card appliance-detail">
         <div class="appliance-header">
           <div class="appliance-title-main">🧺 洗濯機</div>
@@ -636,7 +647,10 @@
         <ul class="appliance-list">
           <li><strong>電源:</strong> Power / 電源開關 / 전원</li>
           <li><strong>スタート:</strong> Start / 啟動 / 시작</li>
+          <li><strong>一時停止:</strong> Pause / 暫停 / 일시정지</li>
           <li><strong>コース:</strong> Course/Cycle / 洗衣行程選擇 / 코스</li>
+          <li><strong>水量:</strong> Water Level / 水量調整 / 수량</li>
+          <li><strong>予約:</strong> Delay Timer / 預約洗衣 / 예약</li>
           <li><strong>標準:</strong> Standard / 標準模式 / 표준</li>
           <li><strong>洗い:</strong> Wash / 洗滌 / 세탁</li>
           <li><strong>脱水:</strong> Spin / 脫水 / 탈수</li>
@@ -645,44 +659,80 @@
         <img src="washing_machine.jpg" alt="Washing Machine" class="guide-img">
       </div>
 
-      <!-- 5. 浴室乾燥機 -->
+      <!-- 5. 浴室乾燥機 (已更新：加預備暖房、節電乾燥、24時間換氣、風乾燥、モード/予約、停止；取消時間設定) -->
       <div id="app-dryer" class="info-card appliance-detail">
         <div class="appliance-header">
           <div class="appliance-title-main">♨️ 浴室乾燥機</div>
           <div class="appliance-title-sub">Bathroom Dryer & Heater / 浴室暖房乾燥機 / 욕실 건조기</div>
         </div>
         <ul class="appliance-list">
-          <li><strong>強弱:</strong> High / Low / 強弱切換 / 강/약</li>
-          <li><strong>涼風:</strong> Cool Breeze / 涼風(通風) / 시원한 바람</li>
-          <li><strong>換気:</strong> Ventilation / 換氣 / 환기</li>
           <li><strong>停止:</strong> Stop / 停止 / 정지</li>
-          <li><strong>時間設定:</strong> Time Setting / 定時設定 / 시간 설정</li>
+          <li><strong>予備暖房:</strong> Pre-Heating / 預備暖房 (預先暖房) / 예비 난방</li>
           <li><strong>入浴暖房:</strong> Bath Heating / 入浴暖房 / 목욕 난방</li>
-          <li><strong>乾燥:</strong> Dry / 烘乾 / 건조</li>
+          <li><strong>乾燥:</strong> Dry / 乾燥 / 건조</li>
+          <li><strong>節電乾燥:</strong> Eco Dry / 節電乾燥 / 절전 건조</li>
+          <li><strong>風乾燥:</strong> Air Dry / 風乾燥 (冷風烘乾) / 송풍 건조</li>
+          <li><strong>換気:</strong> Ventilation / 換氣 / 환기</li>
+          <li><strong>24時間換気:</strong> 24h Ventilation / 24小時持續換氣 / 24시간 환기</li>
+          <li><strong>涼風:</strong> Cool Breeze / 涼風(通風) / 시원한 바람</li>
+          <li><strong>強弱:</strong> High / Low / 強弱切換 / 강/약</li>
+          <li><strong>モード/予約:</strong> Mode / Timer / 模式切換・預約 / 모드/예약</li>
         </ul>
         <img src="bath_dryer.jpg" alt="Bathroom Dryer" class="guide-img">
       </div>
 
-      <!-- 6. 照明 -->
+      <!-- 新增：給湯器 -->
+      <div id="app-water" class="info-card appliance-detail">
+        <div class="appliance-header">
+          <div class="appliance-title-main">♨️ 給湯器</div>
+          <div class="appliance-title-sub">Water Heater / 熱水器 (給湯器) / 온수기 (급탕기)</div>
+        </div>
+        <ul class="appliance-list">
+          <li><strong>運転:</strong> Power / 運轉開關 / 운전</li>
+          <li><strong>入/切:</strong> On/Off / 開・關 / 켜기/끄기</li>
+          <li><strong>給湯温度:</strong> Hot Water Temp / 給湯溫度 (熱水溫度) / 급탕온도</li>
+        </ul>
+        <img src="water_heater.jpg" alt="Water Heater" class="guide-img">
+      </div>
+
+      <!-- 6. 照明 (赤丸改青丸、照片擴充至 7 張，並於 4/5 與 6/7 加標題) -->
       <div id="app-light" class="info-card appliance-detail">
         <div class="appliance-header">
           <div class="appliance-title-main">💡 照明</div>
           <div class="appliance-title-sub">Light Switch / 電燈開關 / 조명 스위치</div>
         </div>
         
-        <p class="lang-ja rule-desc">照明スイッチは写真の赤丸部分にあります。</p>
-        <p class="lang-en rule-desc">The light switch is located in the circled area in the photo.</p>
-        <p class="lang-zh rule-desc">電燈開關位於照片中紅圈標示的位置。</p>
-        <p class="lang-ko rule-desc">조명 스위치는 사진의 빨간 원으로 표시된 위치에 있습니다.</p>
+        <p class="lang-ja rule-desc">照明スイッチは写真の青丸部分にあります。</p>
+        <p class="lang-en rule-desc">The light switch is located in the blue circled area in the photo.</p>
+        <p class="lang-zh rule-desc">電燈開關位於照片中青丸（藍圈）標示的位置。</p>
+        <p class="lang-ko rule-desc">조명 스위치는 사진의 파란 원으로 표시된 위치에 있습니다.</p>
 
         <img src="lighting1.jpg" alt="Light Switch 1" class="guide-img-small">
         <img src="lighting2.jpg" alt="Light Switch 2" class="guide-img-small">
         <img src="lighting3.jpg" alt="Light Switch 3" class="guide-img-small">
-        <img src="lighting4.jpg" alt="Light Switch 2" class="guide-img-small">
-        <img src="lighting5.jpg" alt="Light Switch 2" class="guide-img-small">
+
+        <!-- 第 4、5 張照片分組 -->
+        <div class="photo-group-title">
+          <span class="lang-ja">照明と対応リモコン</span>
+          <span class="lang-en">Light & Remote Control</span>
+          <span class="lang-zh">照明與對應遙控器</span>
+          <span class="lang-ko">조명 및 해당 리모컨</span>
+        </div>
+        <img src="lighting4.jpg" alt="Lighting and Remote 1" class="guide-img-small">
+        <img src="lighting5.jpg" alt="Lighting and Remote 2" class="guide-img-small">
+
+        <!-- 第 6、7 張照片分組 (新增) -->
+        <div class="photo-group-title">
+          <span class="lang-ja">照明と対応リモコン</span>
+          <span class="lang-en">Light & Remote Control</span>
+          <span class="lang-zh">照明與對應遙控器</span>
+          <span class="lang-ko">조명 및 해당 리모컨</span>
+        </div>
+        <img src="lighting6.jpg" alt="Lighting and Remote 3" class="guide-img-small">
+        <img src="lighting7.jpg" alt="Lighting and Remote 4" class="guide-img-small">
       </div>
 
-      <!-- 7. テレビリモコン (新增電源項目) -->
+      <!-- 7. テレビリモコン -->
       <div id="app-tv" class="info-card appliance-detail">
         <div class="appliance-header">
           <div class="appliance-title-main">📺 リモコン</div>
@@ -718,7 +768,7 @@
       <div class="section-title lang-ja">8. 宿泊施設周辺情報</div>
       <div class="section-title lang-en">8. Nearby Facilities</div>
       <div class="section-title lang-zh">8. 周邊景點資訊</div>
-      <div class="section-title lang-ko">8. 숙소周辺 情報</div>
+      <div class="section-title lang-ko">8. 숙소주변 정보</div>
       
       <div class="info-card">
         <span class="rule-title lang-ja">🗺️ 周辺ガイドマップ</span>
@@ -735,7 +785,7 @@
           <span class="lang-ja">🗺️ 周辺ガイドマップを開く</span>
           <span class="lang-en">🗺️ Open Nearby Guide Map</span>
           <span class="lang-zh">🗺️ 開啟周邊地圖</span>
-          <span class="lang-ko">🗺️ 주변 가이드 맵 熱機</span>
+          <span class="lang-ko">🗺️ 주변 가이드 맵 열기</span>
         </a>
       </div>
     </div>
@@ -770,7 +820,7 @@
           <span class="lang-ja">HPはこちら</span>
           <span class="lang-en">Official Website</span>
           <span class="lang-zh">官方網站</span>
-          <span class="lang-ko">공式 홈페이지</span>
+          <span class="lang-ko">공식 홈페이지</span>
         </a>
       </div>
     </div>
